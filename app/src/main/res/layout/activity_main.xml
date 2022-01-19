@@ -18,7 +18,9 @@
         <androidx.recyclerview.widget.RecyclerView
             android:id="@+id/rvPartidas"
             android:layout_width="match_parent"
-            android:layout_height="match_parent" />
+            android:layout_height="match_parent"
+            tools:listitem="@layout/item_partida"
+            tools:itemCount="3" />
 
     </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
 

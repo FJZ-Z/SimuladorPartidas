@@ -3,85 +3,88 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="wrap_content">
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/margin_default">
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
 
         <ImageView
-            android:id="@+id/imageView"
-            android:layout_width="120dp"
-            android:layout_height="120dp"
-            android:layout_marginStart="16dp"
-            android:layout_marginTop="16dp"
+            android:id="@+id/ivTimeDeCasa"
+            android:layout_width="@dimen/team_image_size"
+            android:layout_height="@dimen/team_image_size"
+            android:layout_marginStart="@dimen/margin_default"
+            android:layout_marginTop="@dimen/margin_default"
+            android:contentDescription="@string/cd_TimeDeCasa"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
             tools:srcCompat="@tools:sample/avatars" />
 
         <TextView
-            android:id="@+id/textView"
+            android:id="@+id/tvTimeDeCasaNome"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="16dp"
-            android:layout_marginBottom="16dp"
-            android:text="TextView"
+            android:layout_marginTop="@dimen/margin_default"
+            android:layout_marginBottom="@dimen/margin_default"
             app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="@+id/imageView"
-            app:layout_constraintStart_toStartOf="@+id/imageView"
-            app:layout_constraintTop_toBottomOf="@+id/imageView" />
+            app:layout_constraintEnd_toEndOf="@+id/ivTimeDeCasa"
+            app:layout_constraintStart_toStartOf="@+id/ivTimeDeCasa"
+            app:layout_constraintTop_toBottomOf="@+id/ivTimeDeCasa"
+            tools:text="time de casa" />
 
         <TextView
-            android:id="@+id/textView4"
+            android:id="@+id/tvTimeDeCasaGols"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="99"
             android:textAppearance="@style/TextAppearance.AppCompat.Large"
-            app:layout_constraintBottom_toBottomOf="@+id/imageView"
-            app:layout_constraintEnd_toStartOf="@+id/textView5"
-            app:layout_constraintStart_toEndOf="@+id/imageView"
-            app:layout_constraintTop_toTopOf="@+id/imageView" />
+            app:layout_constraintBottom_toBottomOf="@+id/ivTimeDeCasa"
+            app:layout_constraintEnd_toStartOf="@+id/tvVersus"
+            app:layout_constraintStart_toEndOf="@+id/ivTimeDeCasa"
+            app:layout_constraintTop_toTopOf="@+id/ivTimeDeCasa"
+            tools:text="99" />
 
         <TextView
-            android:id="@+id/textView5"
+            android:id="@+id/tvVersus"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="X"
-            app:layout_constraintBottom_toBottomOf="@+id/imageView"
+            android:text="@string/txt_versus"
+            app:layout_constraintBottom_toBottomOf="@+id/ivTimeDeCasa"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="@+id/imageView" />
+            app:layout_constraintTop_toTopOf="@+id/ivTimeDeCasa" />
 
         <ImageView
-            android:id="@+id/imageView3"
-            android:layout_width="120dp"
-            android:layout_height="120dp"
-            android:layout_marginTop="16dp"
-            android:layout_marginEnd="16dp"
+            android:id="@+id/ivTimeContra"
+            android:layout_width="@dimen/team_image_size"
+            android:layout_height="@dimen/team_image_size"
+            android:layout_marginTop="@dimen/margin_default"
+            android:layout_marginEnd="@dimen/margin_default"
+            android:contentDescription="@string/cd_time_contra"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintTop_toTopOf="parent"
             tools:srcCompat="@tools:sample/avatars" />
 
         <TextView
-            android:id="@+id/textView6"
+            android:id="@+id/tvTimeContraNome"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="16dp"
-            android:text="TextView"
-            app:layout_constraintEnd_toEndOf="@+id/imageView3"
-            app:layout_constraintStart_toStartOf="@+id/imageView3"
-            app:layout_constraintTop_toBottomOf="@+id/imageView3" />
+            android:layout_marginTop="@dimen/margin_default"
+            app:layout_constraintEnd_toEndOf="@+id/ivTimeContra"
+            app:layout_constraintStart_toStartOf="@+id/ivTimeContra"
+            app:layout_constraintTop_toBottomOf="@+id/ivTimeContra"
+            tools:text="time contra" />
 
         <TextView
-            android:id="@+id/textView7"
+            android:id="@+id/tvTimeContraGols"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="99"
             android:textAppearance="@style/TextAppearance.AppCompat.Large"
-            app:layout_constraintBottom_toBottomOf="@+id/imageView3"
-            app:layout_constraintEnd_toStartOf="@+id/imageView3"
-            app:layout_constraintStart_toEndOf="@+id/textView5"
-            app:layout_constraintTop_toTopOf="@+id/imageView3" />
+            app:layout_constraintBottom_toBottomOf="@+id/ivTimeContra"
+            app:layout_constraintEnd_toStartOf="@+id/ivTimeContra"
+            app:layout_constraintStart_toEndOf="@+id/tvVersus"
+            app:layout_constraintTop_toTopOf="@+id/ivTimeContra"
+            tools:text="99" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 </androidx.cardview.widget.CardView>

@@ -1,3 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="app_name">Simulador de Partidas</string>
     <string name="btn_simular_partidas">Botão para simular partidas</string>
