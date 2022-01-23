@@ -1,2 +1,2 @@
 # SimuladorPartidas
-Simulador de partidas DevWeek DIO/Sportheca
+Simulador de partidas Mobile DevWeek DIO/Sportheca
